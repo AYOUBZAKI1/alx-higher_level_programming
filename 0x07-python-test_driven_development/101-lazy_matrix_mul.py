@@ -1,14 +1,13 @@
+#!/usr/bin/python3
+"""Defines a matrix multiplication function using NumPy."""
 import numpy as np
 
+
 def lazy_matrix_mul(m_a, m_b):
-    # Convert input matrices to NumPy arrays
-    a = np.array(m_a)
-    b = np.array(m_b)
+    """Return the multiplication of two matrices.
+    Args:
+        m_a (list of lists of ints/floats): The first matrix.
+        m_b (list of lists of ints/floats): The second matrix.
+    """
 
-    # Perform matrix multiplication using the dot function
-    result = np.dot(a, b)
-
-    # Convert the result back to a regular list of lists
-    result = result.tolist()
-
-    return result
+    return (np.matmul(m_a, m_b))
